@@ -1,0 +1,243 @@
+.hero {
+  width: 99vw;
+  z-index: 2;
+}
+
+.navMovil {
+  display: none;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) 1fr 1fr 1fr 1fr 5fr;
+  padding: 1%;
+  padding-right: 3%;
+  padding-top: 3%;
+  background: black;
+}
+
+.nav p {
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-family: "Blinker", sans-serif;
+}
+
+.nav .btn {
+  display: grid;
+  justify-content: end;
+}
+
+.btn button {
+  display: grid;
+  color: white;
+  font-family: "Blinker", sans-serif;
+  font-size: 1em;
+  font-weight: 900;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 146, 213, 1) 18%,
+    rgba(55, 0, 172, 1) 74%
+  );
+  border-radius: 4px;
+  width: 10vw;
+  height: 5vh;
+  border: none;
+  align-items: center;
+}
+
+.title {
+  display: grid;
+  height: 100%;
+  color: white;
+  font-family: "Blinker", sans-serif;
+  padding: 4%;
+  padding-top: 3%;
+  grid-template-columns: 1fr 1fr; /* Una columna para el contenido */
+  grid-template-rows: auto auto auto auto; /* Cuatro filas para los elementos */
+  gap: 10px; /* Espaciado entre las filas */
+  background: black;
+}
+
+.title h3 {
+  font-size: 3vw;
+  font-weight: 300;
+  grid-column: 1/2;
+  grid-row: 1; /* Coloca h3 en la primera fila */
+}
+
+.title h1 {
+  font-family: "Commissioner", sans-serif;
+  font-size: 11.9vw;
+  grid-column: 1/2;
+  grid-row: 2; /* Coloca h1 en la segunda fila */
+}
+
+.title h2 {
+  font-size: 5vw;
+  grid-column: 1/2;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 146, 213, 1) 10%,
+    rgba(55, 0, 172, 1) 24%
+  );
+
+  background-clip: text; /* Aplicar el fondo de degradado al texto */
+  -webkit-background-clip: text; /* Para navegadores WebKit (Safari, Chrome) */
+  color: transparent; /* Hacer el texto transparente para que se vea el fondo de degradado */
+  grid-row: 3; /* Coloca h2 en la tercera fila */
+}
+
+.title ul {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+ul {
+  display: grid;
+  width: 28vw;
+  grid-template-columns: minmax(10px, 1fr) 1fr 1fr 1fr;
+}
+
+ul li {
+  border-radius: 2px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.icon {
+  font-size: 3.2em;
+  color: rgb(86, 27, 213);
+}
+
+.logo {
+  width: 37vw;
+  height: 100%;
+  grid-column: 1/2;
+  grid-row: 1/5; /* Coloca el logo en la cuarta fila */
+  justify-self: right;
+  align-self: flex-end;
+  margin-right: 4%;
+  background: url("../../assets//yoAcurrate.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* border: 2px solid greenyellow; */
+}
+
+@media (max-width: 980px) {
+  .btn button {
+    width: 18vw;
+  }
+  .title {
+    gap: 1em;
+  }
+
+  .title h3 {
+    font-size: 5vw;
+  }
+
+  .title h2 {
+    font-size: 7vw;
+  }
+
+  .logo {
+    background: url("../../assets//cutDef.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-row: 2/5;
+    margin-right: 0;
+  }
+
+  .title ul {
+    width: 40vw;
+  }
+
+  .icon {
+    font-size: 5em;
+    color: rgb(86, 27, 213);
+  }
+}
+
+@media (max-width: 680px) {
+  .navMovil {
+    background: black;
+    color: white;
+    width: 98vw;
+    display: grid;
+    grid-template-columns: minmax(50px, 3fr) 3fr;
+    padding: 1%;
+    padding-right: 3%;
+    padding-top: 3%;
+    margin-bottom: 2%;
+    background: black;
+    justify-content: space-evenly;
+  }
+
+  .navMovil .icon {
+    display: flex;
+    font-size: 2.7em;
+    color: white;
+    justify-self: right;
+    align-self: flex-end;
+    padding-right: 70%;
+  }
+
+  .navMovil .btnMovil{
+    align-self: center;
+    padding-left: 55%;
+  }
+
+  .navMovil .btnMovil button {
+    display: grid;
+    color: white;
+    font-family: "Blinker", sans-serif;
+    font-size: .7em;
+    font-weight: 900;
+    background: linear-gradient(
+      135deg,
+      rgba(27, 146, 213, 1) 18%,
+      rgba(55, 0, 172, 1) 74%
+    );
+    border-radius: 4px;
+    width: 20vw;
+    height: 5vh;
+    border: none;
+    align-items: center;
+  }
+  
+
+  .nav {
+    display: none;
+  }
+
+  .title h3 {
+    font-size: 6vw;
+  }
+
+  .title h1 {
+    font-size: 20vw;
+    width: 95vw;
+    max-width: 100%;
+  }
+
+  .title h2 {
+    font-size: 10vw;
+    width: 50%;
+  }
+
+  .title ul {
+    justify-content: center;
+    justify-self: center;
+    width: 60vw;
+    margin-top: 10%;
+  }
+
+  .logo {
+    background: url("../../assets//cutDef.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-row: 3/5;
+    height: 120%;
+    /* border: 2px solid greenyellow; */
+  }
+}

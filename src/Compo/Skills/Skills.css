@@ -1,0 +1,96 @@
+.Skills{
+    width: 99vw;
+    display: grid;
+    padding: 3%;
+    background: black;
+        z-index: 1;
+
+    grid-template-columns: minmax(100px, 1fr)  ;
+}
+
+.Skills .title h1{
+    font-size:5em ;
+}
+
+.circle{
+    background: rgba(55,0,172,1);
+    filter: blur(10em);
+    height: 300%;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 255, 30);
+    grid-column: 3/4;
+    justify-self: end;
+}
+
+/* .circle2{
+    background: rgba(27,146,213,1);
+    filter: blur(10em);
+    height: 300%;
+    width: 100%;
+    border-radius: 50%;
+    grid-row:2/3 ;
+    grid-column: 2/3;
+    justify-self: start;
+
+} */
+
+.cont{
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 1fr 1fr ;
+    color: white;
+    width: 90vw;
+    gap: 10%;
+    align-self: center;
+   padding-left: 8%;
+   font-family: 'Blinker', sans-serif;
+   /* border: 2px solid blue; */
+}
+
+@media (width < 900px){
+    .cont{
+    grid-template-columns: minmax(100px, 1fr) ;
+    gap: 2%;
+    }
+
+    .cont div{
+        padding-bottom: 10%;
+    }
+}
+
+.cont div{
+    border: 2px lid red;
+}
+
+.cont h3{
+    background: linear-gradient(115deg, rgba(27,146,213,1) 10%, rgba(55,0,172,1) 64%);
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    background-clip: text; /* Aplicar el fondo de degradado al texto */
+    -webkit-background-clip: text; /* Para navegadores WebKit (Safari, Chrome) */
+    color: transparent;
+}
+
+.cont ul{
+    display: grid;
+    width: 90%;
+    grid-template-columns: minmax(100px, 1fr);
+    margin: 10%;
+    gap: 10px;
+}
+
+.cont ul li{
+    width: 80%;
+    font-weight: 800;
+    font-size: 1.2em;
+    border-right: 2px solid rgba(27,146,213,1);
+    border-bottom: 2px solid rgba(27,146,213,1);
+    padding: 5%;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgba(27,146,213,1) 1%, rgba(55,0,172,1) 74%);
+    
+}
+
+.cont ul li img{
+    width: 1.5em;
+}

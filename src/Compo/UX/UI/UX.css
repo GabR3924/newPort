@@ -1,0 +1,24 @@
+.uxui {
+    background: black;
+}
+
+.uxui  h1{
+    font-size: 5em;
+}
+
+.projects{
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 1fr;
+    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 3%;
+}
+
+@media (width < 900px){
+    .projects{
+    grid-template-columns: minmax(100px, 1fr) ;
+    gap: 2%;
+    }
+}
