@@ -30,7 +30,7 @@ function Hero() {
     <div className='title'>
         <h3>Hey There, I'm Gabriela</h3>
         <h1>FULLSTACK DEVELOPER</h1>
-        <h2>LETS GIVE LIFE TO <br/> YOUR IDEA</h2>
+        <h2>LETS GIVE LIFE TO YOUR IDEA</h2>
         <ul>
           <li><FaSquareInstagram className='icon'/></li>
           <li><FaGithub className='icon'/></li>

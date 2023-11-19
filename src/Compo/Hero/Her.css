@@ -92,6 +92,7 @@
 .title ul {
   grid-row: 4;
   grid-column: 1;
+  margin-top: 3%;
 }
 
 ul {
@@ -112,14 +113,14 @@ ul li {
 }
 
 .logo {
-  width: 37vw;
+  width:30vw;
   height: 100%;
   grid-column: 1/2;
   grid-row: 1/5; /* Coloca el logo en la cuarta fila */
   justify-self: right;
   align-self: flex-end;
-  margin-right: 4%;
-  background: url("../../assets//yoAcurrate.png");
+  margin-left: 65vw;
+  background: url("../../assets//cutDef.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
