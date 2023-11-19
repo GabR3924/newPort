@@ -70,6 +70,7 @@
   font-family: "Commissioner", sans-serif;
   font-size: 11.9vw;
   grid-column: 1/2;
+  width: 95vw;
   grid-row: 2; /* Coloca h1 en la segunda fila */
 }
 
@@ -121,7 +122,6 @@ ul li {
   background: url("../../assets//yoAcurrate.png");
   background-repeat: no-repeat;
   background-size: contain;
-  /* border: 2px solid greenyellow; */
 }
 
 @media (max-width: 980px) {
@@ -215,7 +215,7 @@ ul li {
   }
 
   .title h1 {
-    font-size: 20vw;
+    font-size: 15vw;
     width: 95vw;
     max-width: 100%;
   }
