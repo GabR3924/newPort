@@ -68,7 +68,7 @@
 
 .title h1 {
   font-family: "Commissioner", sans-serif;
-  font-size: 11.9vw;
+  font-size: 14.5vw;
   grid-column: 1/2;
   width: 95vw;
   grid-row: 2; /* Coloca h1 en la segunda fila */
@@ -79,8 +79,8 @@
   grid-column: 1/2;
   background: linear-gradient(
     135deg,
-    rgba(27, 146, 213, 1) 15%,
-    rgba(55, 0, 172, 1) 75%
+    rgba(27, 146, 213, 1) 8%,
+    rgb(81, 0, 255) 25%
   );
 
   background-clip: text; /* Aplicar el fondo de degradado al texto */
@@ -109,12 +109,15 @@ ul li {
 
 .icon {
   font-size: 3.2em;
-  color: rgb(86, 27, 213);
+  color: rgb(81, 0, 255);
 }
 
 .logo {
-  width:30vw;
-  height: 100%;
+  position: absolute;
+  width:44vw;
+  height: 100vh;
+  /* border: 2px solid greenyellow; */
+  top: 5%;
   grid-column: 1/2;
   grid-row: 1/5; /* Coloca el logo en la cuarta fila */
   justify-self: right;
@@ -227,13 +230,23 @@ ul li {
   .title h2 {
     font-size: 11vw;
     width: 50%;
+    background: linear-gradient(
+    135deg,
+    rgba(27, 146, 213, 1) 30%,
+    rgb(81, 0, 255) 55%
+  );
+
+  background-clip: text; /* Aplicar el fondo de degradado al texto */
+  -webkit-background-clip: text; /* Para navegadores WebKit (Safari, Chrome) */
+  color: transparent; /* Hacer el texto transparente para que se vea el fondo de degradado */
+    
   }
 
   .title ul {
     justify-self: center;
     width: 80vw;
     height: 15vh;
-    margin-top: 5%;
+    margin-top: 8%;
   }
 
   .title ul li {
@@ -257,7 +270,7 @@ ul li {
     width:70vw;
     height: 47vh;
     /* border: 2px solid greenyellow; */
+    top: -34%;
     right: -15%;
-    bottom: 30%;
   }
 }
