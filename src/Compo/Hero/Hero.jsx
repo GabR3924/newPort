@@ -29,7 +29,7 @@ function Hero() {
     </div> 
     <div className='title'>
         <h3>Hey There, I'm Gabriela</h3>
-        <h1>FULLSTACK DEVELOPER</h1>
+        <h1>DEVEL<br/>OPER</h1>
         <h2>LETS GIVE LIFE TO YOUR IDEA</h2>
         <ul>
           <li><FaSquareInstagram className='icon'/></li>

@@ -79,8 +79,8 @@
   grid-column: 1/2;
   background: linear-gradient(
     135deg,
-    rgba(27, 146, 213, 1) 10%,
-    rgba(55, 0, 172, 1) 24%
+    rgba(27, 146, 213, 1) 15%,
+    rgba(55, 0, 172, 1) 75%
   );
 
   background-clip: text; /* Aplicar el fondo de degradado al texto */
@@ -154,8 +154,9 @@ ul li {
   }
 
   .icon {
-    font-size: 5em;
-    color: rgb(86, 27, 213);
+    width: 100%;
+    height: 100%;
+    color: rgb(27, 108, 213);
   }
 }
 
@@ -167,9 +168,10 @@ ul li {
     display: grid;
     grid-template-columns: minmax(50px, 3fr) 3fr;
     padding: 1%;
+    padding-left: 3%;
     padding-right: 3%;
-    padding-top: 3%;
-    margin-bottom: 2%;
+    padding-top: 5%;
+    margin-bottom: 5%;
     background: black;
     justify-content: space-evenly;
   }
@@ -180,28 +182,29 @@ ul li {
     color: white;
     justify-self: right;
     align-self: flex-end;
-    padding-right: 70%;
+    padding-right: 68%;
   }
 
   .navMovil .btnMovil{
     align-self: center;
-    padding-left: 55%;
+    padding-left: 30%;
   }
 
   .navMovil .btnMovil button {
     display: grid;
     color: white;
     font-family: "Blinker", sans-serif;
-    font-size: .7em;
+    font-size: 1em;
     font-weight: 900;
     background: linear-gradient(
       135deg,
       rgba(27, 146, 213, 1) 18%,
       rgba(55, 0, 172, 1) 74%
     );
-    border-radius: 4px;
-    width: 20vw;
-    height: 5vh;
+
+    border-radius: 8px;
+    width: 30vw;
+    height: 3.5vh;
     border: none;
     align-items: center;
   }
@@ -216,29 +219,45 @@ ul li {
   }
 
   .title h1 {
-    font-size: 15vw;
+    font-size: 28vw;
     width: 95vw;
     max-width: 100%;
   }
 
   .title h2 {
-    font-size: 10vw;
+    font-size: 11vw;
     width: 50%;
   }
 
   .title ul {
-    justify-content: center;
     justify-self: center;
-    width: 60vw;
-    margin-top: 10%;
+    width: 80vw;
+    height: 15vh;
+    margin-top: 5%;
   }
 
+  .title ul li {
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  
+  .title ul li .icon {
+    color: rgba(55, 0, 172, 1) ;
+  }
+  
+
   .logo {
+    position: absolute;
     background: url("../../assets//cutDef.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     grid-row: 3/5;
-    height: 120%;
+    width:70vw;
+    height: 47vh;
     /* border: 2px solid greenyellow; */
+    right: -15%;
+    bottom: 30%;
   }
 }
