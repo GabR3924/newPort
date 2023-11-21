@@ -1,58 +1,74 @@
 .Skills{
     width: 99vw;
+    height: 100%;
     display: grid;
     padding: 3%;
-    background: black;
-        z-index: 1;
-
     grid-template-columns: minmax(100px, 1fr)  ;
 }
 
 .Skills .title h1{
     font-size:5em ;
 }
-
-.circle{
-    background: rgba(55,0,172,1);
-    filter: blur(10em);
-    height: 300%;
-    width: 100%;
-    border-radius: 50%;
-    border: 2px solid rgb(0, 255, 30);
-    grid-column: 3/4;
-    justify-self: end;
-}
-
-/* .circle2{
-    background: rgba(27,146,213,1);
-    filter: blur(10em);
-    height: 300%;
-    width: 100%;
-    border-radius: 50%;
-    grid-row:2/3 ;
-    grid-column: 2/3;
-    justify-self: start;
-
-} */
-
-.cont{
+.cont {
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) 1fr 1fr ;
+    grid-template-columns: minmax(100px, 1fr) 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr; /* Adjusted grid-template-rows */
     color: white;
     width: 90vw;
-    gap: 10%;
     align-self: center;
-   padding-left: 8%;
-   font-family: 'Blinker', sans-serif;
-   /* border: 2px solid blue; */
-}
+    padding-bottom: 1%;
+    padding-left: 8%;
+    font-family: 'Blinker', sans-serif;
+    border: 2px solid blue;
+  }
+  
+  .info {
+    border: 2px solid greenyellow;
+    grid-column: 1;
+    grid-row: 1 / span 3; /* Adjusted grid-row */
+  }
+  
+  .skills {
+    border: 2px solid red;
+    grid-column: 2 / span 2; /* Adjusted grid-column */
+    grid-row: 1; /* Adjusted grid-row */
+  }
+  
+  .about {
+    border: 2px solid peachpuff;
+    grid-column: 2 / span 3; 
+    grid-row: 2/4; 
+
+  }
+  
+  .project {
+    border: 2px solid rgb(19, 139, 61);
+    grid-column: 3 / span 4;
+    grid-row: 2/4; 
+  }
 
 @media (width < 900px){
-    .cont{
-    grid-template-columns: minmax(100px, 1fr) ;
-    gap: 2%;
-    }
+    .cont {
+        grid-template-columns: minmax(100px, 1fr);
+        grid-template-rows: 1fr 1fr; /* Adjusted grid-template-rows */
+      }
+    
+      .info {
+        grid-row: auto; /* Reset grid-row to its default value */
+      }
+    
+      .skills {
+        grid-column: 1; /* Adjusted grid-column */
+        grid-row: 2 / span 2; /* Adjusted grid-row */
+      }
+    
+      .about,
+      .project {
+        grid-column: 1; /* Adjusted grid-column */
+        grid-row: auto; /* Reset grid-row to its default value */
+      }
 
+    
     .cont div{
         padding-bottom: 10%;
     }
