@@ -15,14 +15,18 @@ function Skills() {
         {/* <div className='circle'></div> */}
         <div className="cont">
             <div className='info'>
-                <h3>Info</h3>
-                <ul>
-                    <li><img src={Figma} alt="" />Figma</li>
-                    <li><img src={Js} alt="" />Javascript</li>
-                    <li><img src={React} alt="" />React</li>
-                    <li><img src={React} alt="" />React Native</li>
-                    <li><TbBrandRedux />Redux</li>
-                </ul>
+                <div className="img"></div>
+                <div className="txt">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione ducimus corporis beatae voluptatibus. Laboriosam dolore, fugiat autem, quia minus hic magni rerum, dolor nemo excepturi possimus reprehenderit eveniet quos.
+                    Similique cumque tempore aliquid voluptates non mollitia hic ipsam deserunt, officia assumenda suscipit doloremque facilis odit amet? Veritatis optio, quam repudiandae ab voluptas at quaerat excepturi sed, reprehenderit laudantium blanditiis.
+                    </p>
+                </div>
+                <div className="contact">
+                    <h2>Contact</h2>
+                        <p>Telefono</p>
+                        <p>Email</p>
+                        <p>Linkedln</p>
+                </div>
             </div >
             <div className='skills'>
                 <h3>Backend</h3>
@@ -37,9 +41,12 @@ function Skills() {
                 <ul>
                     <li>Figma</li>
                     <li>Html | CSS</li>
-                    <li>Javascript</li>
-                    
+                    <li>Figma</li>
+                    <li>Html | CSS</li>
+                    <li>Figma</li>
+                    <li>Html | CSS</li>
                 </ul>
+                
             </div>
             <div className='project'> 
                 <h3>projects</h3>
