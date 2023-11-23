@@ -1,10 +1,8 @@
 import './App.css'
 import Hero from './Compo/Hero/Hero'
-import Grid from './Compo/PracticaGrid/Grid'
 import Skills from './Compo/Skills/Skills'
-import UX from './Compo/UX/UI/UX'
 import Projects from './Compo/Projects/Projects'
-import AF from './Compo/AF/AF'
+import Footer from './Compo/Footer/Footer'
 
 function App() {
 
@@ -14,8 +12,7 @@ function App() {
         <Hero/>
         <Skills/>
         <Projects/>
-        <UX/>
-        <AF/>
+        <Footer/>
       </div>
     </>
   )

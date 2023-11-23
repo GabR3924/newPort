@@ -1,19 +1,39 @@
-.uxui {
-    background: black;
+.section .options{
+    margin-top: 5%;
+    margin-bottom: 4%;
+    padding: 1%;
+    padding-left: 12%;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) 1fr 1fr 1fr;
 }
 
-.uxui  h1{
-    font-size: 5em;
+.section .options h1{
+    font-family: "Commissioner", sans-serif;
+
+    font-size: 2.5em;
+    color: white;
 }
 
 .projects{
     height: 100%;
     display: grid;
-    grid-template-columns: minmax(100px, 1fr) 1fr;
+    grid-template-columns: minmax(100px, 1fr);
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
     gap: 3%;
+}
+
+.projects *{
+    border: 2px solid blue;
+    border-bottom: 2px solid white;
+}
+
+.projects img{
+    margin-bottom: 2%;
+    width: 45%;
+    border-radius: 15px;
+    border: none;
 }
 
 @media (width < 900px){
