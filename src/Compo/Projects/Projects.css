@@ -1,44 +1,92 @@
-.section .options{
+.section .options {
     margin-top: 5%;
     margin-bottom: 4%;
     padding: 1%;
     padding-left: 12%;
     display: grid;
     grid-template-columns: minmax(100px, 1fr) 1fr 1fr 1fr;
-}
-
-.section .options h1{
+  }
+  
+  .section .options h1 {
     font-family: "Commissioner", sans-serif;
-
     font-size: 2.5em;
     color: white;
-}
-
-.projects{
+  }
+  
+  .projects {
     height: 100%;
     display: grid;
     grid-template-columns: minmax(100px, 1fr);
-    padding: 2%;
+    grid-template-rows: auto auto auto 1fr;
     padding-left: 5%;
     padding-right: 5%;
     gap: 3%;
-}
-
-.projects *{
+    margin-bottom: 1%;
+  }
+  
+  .projects * {
     border: 2px solid blue;
     border-bottom: 2px solid white;
-}
-
-.projects img{
+  }
+  
+  .projects img {
     margin-bottom: 2%;
     width: 45%;
     border-radius: 15px;
     border: none;
-}
-
-@media (width < 900px){
-    .projects{
-    grid-template-columns: minmax(100px, 1fr) ;
+  }
+  
+  .uno {
+    display: grid;
+    grid-template-rows: auto auto auto; /* Ajustado para incluir el botón "Ver" */
+    grid-template-columns: minmax(100px, 1fr) 1fr;
+    color: white;
     gap: 2%;
+  }
+  
+  .uno .img {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Ajustado para ocupar 2 filas */
+  }
+  
+  .uno .info {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .uno .detail {
+    display: none; /* Inicialmente oculto */
+    grid-column: 1 / span 2; /* Ajustado para ocupar 2 columnas */
+    grid-row: 2;
+    color: white;
+    margin-top: 10px;
+  }
+  
+  .uno .detail.visible{
+    display: block;
+  }
+
+  .uno .ver {
+    background: greenyellow;
+    cursor: pointer; /* Agregado para indicar que es un elemento interactivo */
+  }
+  
+  .uno .ver:hover {
+    background: lightgreen; /* Cambio de color al pasar el ratón */
+  }
+  
+  .dos {
+    justify-content: flex-end;
+  }
+  
+  .cuatro {
+    margin-bottom: 15%;
+  }
+  
+  @media (max-width: 900px) {
+    .projects {
+      grid-template-columns: minmax(100px, 1fr);
+      gap: 2%;
     }
-}
+  }
+  
