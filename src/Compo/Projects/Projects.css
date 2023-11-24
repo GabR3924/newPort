@@ -77,13 +77,13 @@
   display: grid;
   color: white;
   font-family: "Blinker", sans-serif;
-  font-size: 1em;
+  font-size: .9em;
   background: linear-gradient(
     135deg,
-    rgba(27, 146, 213, 1) 18%,
-    rgba(55, 0, 172, 1) 74%
+    rgba(27, 146, 213, 1) 5%,
+    rgba(55, 0, 172, 1) 63%
   );
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 5%;
   border-bottom: 2px solid rgba(27, 146, 213, 1);
   border-right: 2px solid rgba(27, 146, 213, 1) ;
@@ -102,8 +102,8 @@
   display: block;
   grid-row: 3;
   padding: 2%;
-  border-radius: 20px;
-  background: rgba(146, 146, 146, 0.317);
+  border-radius: 10px;
+  background: rgba(107, 107, 107, 0.221);
 }
 
 .uno .ver {
@@ -112,7 +112,7 @@
   font-family: "Blinker", sans-serif;
   font-size: 1em;
   font-weight: 900;
-  background: rgba(122, 121, 121, 0.743);
+  background: rgba(122, 121, 121, 0.366);
   border-radius: 100px;
   width: 4vw;
   height: 8vh;
