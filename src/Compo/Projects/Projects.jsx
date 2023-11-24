@@ -7,6 +7,8 @@ function Projects() {
 
   const toggleDetail = () => {
     setDetailVisible(!detailVisible);
+    const unoContainer = document.querySelector('.uno');
+    unoContainer.classList.toggle('expanded');
   };
 
   return (
@@ -20,7 +22,7 @@ function Projects() {
       <div className="projects">
         <div className='uno'>
           <div className='img'>
-            <img src={Template} alt="" />
+            
           </div>
           <div className="info">
             <h3>lorem</h3>
@@ -39,6 +41,8 @@ function Projects() {
             Excepturi in maxime ea. Animi modi consectetur rerum suscipit dolorum. Quibusdam eum impedit pariatur sapiente quo, consequatur culpa! Harum molestiae ut ex, optio sequi fuga iste aperiam quod dignissimos atque?
             Qui quis animi nihil dicta doloribus saepe nemo odio fuga. Pariatur ipsam aspernatur totam commodi rem repudiandae saepe quam possimus nam quod minus, tenetur perspiciatis vel aliquid unde minima beatae.
             Molestiae, quidem saepe. Consectetur labore ipsum ea vel, quae eos enim nesciunt? Repellendus, ducimus laboriosam placeat quia consequatur ut distinctio quas iste tenetur? Earum numquam repellendus ducimus. Veniam, aliquid! Commodi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam delectus eligendi qui! Fuga, accusamus consectetur corporis provident rem reiciendis illum fugiat veritatis placeat eos, repudiandae qaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauis itaque fugit voluptas?
+            Repudiandae culpa eos earum aut quae atque dolorum iusto obcaecati eius minima nostrum, quod ad vitae quidem facilis ullam fugiat dignissimos quis incidunt modi sint consequatur veniam. Dolorem, assumenda voluptatem.
           </div>
         </div>
         <div className='dos'>
