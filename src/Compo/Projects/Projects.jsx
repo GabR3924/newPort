@@ -25,12 +25,13 @@ function Projects() {
             
           </div>
           <div className="info">
-            <h3>lorem</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <h3>NFTs Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fuga tenetur asperiores et praesentium! Similique impedit necessitatibus natus recusandae eos laboriosam iusto nobis, iste ut, excepturi, velit architecto inventore beatae.
+            itate at in delectus libero quo neque accusantium.</p>
             <ul>
-              <li>bb</li>
-              <li>bb</li>
-              <li>bb</li>
+              <li>UX/UI</li>
+              <li>Frontend</li>
+              <li>CSS</li>
             </ul>
             <button className='ver' onClick={toggleDetail}>
               Ver
