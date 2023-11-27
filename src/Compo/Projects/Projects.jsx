@@ -26,12 +26,13 @@ function Projects() {
 
   return (
     <section className='section'>
-      <div className='options'>
+      <h1>Projectos</h1>
+      {/* <div className='options'>
         <h1>Web App's</h1>
         <h1>Java</h1>
         <h1>API's</h1>
         <h1>UX UI</h1>
-      </div>
+      </div> */}
       <div className="projects">
         <div className='uno'>
           <div className='img'></div>
@@ -48,7 +49,10 @@ function Projects() {
             </button>
           </div>
           <div className={`detail ${detailVisible.uno ? 'visible' : ''}`}>
-            {/* Contenido del detalle del contenedor uno */}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci fugiat autem quia. Ducimus maxime exercitationem aliquid debitis saepe. Laborum quidem et ipsum labore fugit pariatur perferendis, ut debitis a soluta.
+            Quaerat porro tempora, ad dolorem tempore odio? Quidem explicabo iure quibusdam, voluptates aliquid at eum, nisi numquam, sit necessitatibus modi facere illo non! Ducimus, est fuga ipsa ipsam iure perferendis.
+            Natus harum eos delectus alias! Adipisci alias molestias ad autem minus in perspiciatis repellendus odit inventore quisquam reprehenderit, praesentium, harum nihil, culpa expedita omnis. Distinctio pariatur tenetur impedit aperiam voluptatibus.
+            Necessitatibus hic esse ab, veniam quod, veritatis eos molestias amet iste eius magni! Recusandae ullam similique nostrum commodi asperiores, fugiat amet laboriosam veritatis. Earum saepe consequuntur consequatur fugit atque maxime?
           </div>
         </div>
         <div className='dos'>

@@ -8,6 +8,7 @@ function Footer() {
       <footer className="footerWrapper">
         <h1 className="logoo">Gabriela Rodriguez</h1>
         <nav className="nav">
+        <a href="#about" className="navLink">Home</a>
           <a href="#about" className="navLink">About</a>
           <a href="#skills" className="navLink">Skills</a>
           <a href="#projects" className="navLink">Projects</a>
