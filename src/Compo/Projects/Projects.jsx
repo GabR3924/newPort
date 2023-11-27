@@ -3,12 +3,25 @@ import Template from '../../assets/Desktop.png';
 import './Projects.css';
 
 function Projects() {
-  const [detailVisible, setDetailVisible] = useState(false);
+  // Utilizamos un objeto para almacenar el estado de cada contenedor
+  const [detailVisible, setDetailVisible] = useState({
+    uno: false,
+    dos: false,
+    tres: false,
+    cuatro: false,
+  });
 
-  const toggleDetail = () => {
-    setDetailVisible(!detailVisible);
-    const unoContainer = document.querySelector('.uno');
-    unoContainer.classList.toggle('expanded');
+  const toggleDetail = (container) => {
+    // Creamos una copia del estado actual
+    const updatedDetailVisible = { ...detailVisible };
+    // Cambiamos el estado del contenedor específico
+    updatedDetailVisible[container] = !updatedDetailVisible[container];
+    // Actualizamos el estado global
+    setDetailVisible(updatedDetailVisible);
+
+    // Ajusta la clase del contenedor específico
+    const containerElement = document.querySelector(`.${container}`);
+    containerElement.classList.toggle('expanded');
   };
 
   return (
@@ -21,39 +34,76 @@ function Projects() {
       </div>
       <div className="projects">
         <div className='uno'>
-          <div className='img'>
-            
-          </div>
+          <div className='img'></div>
           <div className="info">
             <h3>NFTs Website</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni fuga tenetur asperiores et praesentium! Similique impedit necessitatibus natus recusandae eos laboriosam iusto nobis, iste ut, excepturi, velit architecto inventore beatae.
-            itate at in delectus libero quo neque accusantium.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
             <ul>
               <li>UX/UI</li>
               <li>Frontend</li>
               <li>CSS</li>
             </ul>
-            <button className='ver' onClick={toggleDetail}>
+            <button className='ver' onClick={() => toggleDetail('uno')}>
               Ver
             </button>
           </div>
-          <div className={`detail ${detailVisible ? 'visible' : ''}`}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nulla aliquam expedita impedit, perspiciatis quo placeat adipisci animi earum pariatur dignissimos quia esse non hic. Natus possimus fugit optio incidunt.
-            Excepturi in maxime ea. Animi modi consectetur rerum suscipit dolorum. Quibusdam eum impedit pariatur sapiente quo, consequatur culpa! Harum molestiae ut ex, optio sequi fuga iste aperiam quod dignissimos atque?
-            Qui quis animi nihil dicta doloribus saepe nemo odio fuga. Pariatur ipsam aspernatur totam commodi rem repudiandae saepe quam possimus nam quod minus, tenetur perspiciatis vel aliquid unde minima beatae.
-            Molestiae, quidem saepe. Consectetur labore ipsum ea vel, quae eos enim nesciunt? Repellendus, ducimus laboriosam placeat quia consequatur ut distinctio quas iste tenetur? Earum numquam repellendus ducimus. Veniam, aliquid! Commodi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta totam delectus eligendi qui! Fuga, accusamus consectetur corporis provident rem reiciendis illum fugiat veritatis placeat eos, repudiandae qaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaauis itaque fugit voluptas?
-            Repudiandae culpa eos earum aut quae atque dolorum iusto obcaecati eius minima nostrum, quod ad vitae quidem facilis ullam fugiat dignissimos quis incidunt modi sint consequatur veniam. Dolorem, assumenda voluptatem.
+          <div className={`detail ${detailVisible.uno ? 'visible' : ''}`}>
+            {/* Contenido del detalle del contenedor uno */}
           </div>
         </div>
         <div className='dos'>
-          <img src={Template} alt="" />
+          <div className='img'></div>
+          <div className="info">
+            <h3>NFTs Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <ul>
+              <li>UX/UI</li>
+              <li>Frontend</li>
+              <li>CSS</li>
+            </ul>
+            <button className='ver' onClick={() => toggleDetail('dos')}>
+              Ver
+            </button>
+          </div>
+          <div className={`detail ${detailVisible.dos ? 'visible' : ''}`}>
+            {/* Contenido del detalle del contenedor dos */}
+          </div>
         </div>
         <div className='tres'>
-          <img src={Template} alt="" />
+          <div className='img'></div>
+          <div className="info">
+            <h3>NFTs Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <ul>
+              <li>UX/UI</li>
+              <li>Frontend</li>
+              <li>CSS</li>
+            </ul>
+            <button className='ver' onClick={() => toggleDetail('tres')}>
+              Ver
+            </button>
+          </div>
+          <div className={`detail ${detailVisible.tres ? 'visible' : ''}`}>
+            {/* Contenido del detalle del contenedor tres */}
+          </div>
         </div>
         <div className='cuatro'>
-          <img src={Template} alt="" />
+          <div className='img'></div>
+          <div className="info">
+            <h3>NFTs Website</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <ul>
+              <li>UX/UI</li>
+              <li>Frontend</li>
+              <li>CSS</li>
+            </ul>
+            <button className='ver' onClick={() => toggleDetail('cuatro')}>
+              Ver
+            </button>
+          </div>
+          <div className={`detail ${detailVisible.cuatro ? 'visible' : ''}`}>
+            {/* Contenido del detalle del contenedor cuatro */}
+          </div>
         </div>
       </div>
     </section>
