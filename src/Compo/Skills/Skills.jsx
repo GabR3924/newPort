@@ -28,11 +28,16 @@ function Skills() {
                         <p>Linkedln</p>
                 </div>
             </div >
-            <div className='skills'>
-                <h3>Backend</h3>
+            <div className='sks'>
                 <ul>
-                    <li>Figma</li>
-                    
+                    <li>+</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
+                    <li>*</li>
                     
                 </ul>
             </div>
