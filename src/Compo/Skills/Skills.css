@@ -17,6 +17,7 @@
     display: grid;
     padding: 3%;
     grid-template-columns: minmax(100px, 1fr)  ;
+    
 }
 
 .Skills .title h1{
@@ -59,7 +60,7 @@
 
   .info .img{
     background: url('../../assets//about.jpg');
-    height: 25%;
+    height: 35%;
     margin-bottom: 10%;
     width: 100%;
     background-repeat: no-repeat;
@@ -84,17 +85,24 @@
     width: 100%;
     display: grid;
     grid-column: 2 / span 4;
-    background: #737373;
+    bbackground: rgba(128, 128, 128, 0.103);
     grid-template-columns: repeat(8, 1fr);
+    gap: 3%;
+  }
+
+  .sks .add{
+    background: blue;
   }
   
   .sks .img {
+    background: none;
     width: 50%;
     height: 100%;
     flex: 1;
     border: 2px solid rgb(0, 255, 68);
     text-align: center;
     margin: 2px;
+    
   }
   
   .about {

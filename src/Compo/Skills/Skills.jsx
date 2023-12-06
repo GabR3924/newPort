@@ -5,6 +5,10 @@ import React from '../../assets/react.png'
 import Js from '../../assets/js.png'
 import Css from '../../assets/css.png'
 import Figma from '../../assets/fig.png'
+import Angular from '../../assets/angular.png'
+import Sql from '../../assets/sql.png'
+import Selenium from '../../assets/selenium.png'
+import Mongo from '../../assets/mongo.png'
 
 function Skills() {
   return (
@@ -29,14 +33,15 @@ function Skills() {
                 </div>
             </div >
             <div className='sks'>
-                <div className="img">img</div>
-                <div className="img"></div>
-                <div className="img"></div>
-                <div className="img"></div>
-                <div className="img"></div>
-                <div className="img"></div>
-                <div className="img"></div>
-                <div className="img"></div>
+                <div className="add"></div>
+                <img src={Js} alt="" />
+                <img src={Css} alt="" />
+                <img src={Figma} alt="" />
+                <img src={React} alt="" />
+                <img src={Angular} alt="" />
+                <img src={Sql} alt="" />
+                <img src={Selenium} alt="" />
+                <img src={Mongo} alt="" />
             </div>
             <div className='about'> 
                 <h3>about</h3>
