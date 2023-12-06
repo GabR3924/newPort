@@ -29,17 +29,14 @@ function Skills() {
                 </div>
             </div >
             <div className='sks'>
-                <ul>
-                    <li>+</li>
-                    <li>*</li>
-                    <li>*</li>
-                    <li>*</li>
-                    <li>*</li>
-                    <li>*</li>
-                    <li>*</li>
-                    <li>*</li>
-                    
-                </ul>
+                <div className="img">img</div>
+                <div className="img"></div>
+                <div className="img"></div>
+                <div className="img"></div>
+                <div className="img"></div>
+                <div className="img"></div>
+                <div className="img"></div>
+                <div className="img"></div>
             </div>
             <div className='about'> 
                 <h3>about</h3>
