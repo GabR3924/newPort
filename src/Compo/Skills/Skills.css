@@ -87,22 +87,30 @@
     grid-column: 2 / span 4;
     bbackground: rgba(128, 128, 128, 0.103);
     grid-template-columns: repeat(8, 1fr);
-    gap: 3%;
+    gap: 4%;
   }
 
   .sks .add{
-    background: blue;
+    display: flex;
+    background: linear-gradient(
+    135deg,
+    rgba(27, 146, 213, 1) 36%,
+    rgb(81, 0, 255) 95%
+  );
+  border-right: 3px solid  rgb(35, 167, 243) ;
+  border-bottom: 3px solid  rgb(32, 162, 237) ;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+
   }
   
   .sks .img {
     background: none;
-    width: 50%;
-    height: 100%;
-    flex: 1;
-    border: 2px solid rgb(0, 255, 68);
-    text-align: center;
-    margin: 2px;
-    
+    width: 40%;
+    height: 90%;
+    margin-bottom: 2%;
+    gap: 2%;
   }
   
   .about {
