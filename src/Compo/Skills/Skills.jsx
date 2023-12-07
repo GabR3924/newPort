@@ -14,6 +14,7 @@ import Express from '../../assets/express.png'
 import Aws from '../../assets/aws.png'
 import Git from '../../assets/git.png'
 import Postman from '../../assets/postman.png'
+import Website from '../../assets/Website.png'
 
 
 function Skills() {
@@ -64,24 +65,46 @@ Adaptable, Analitica, Dedicada, Flexible y Orientada a resultados.</p>
                 <img src={Postman} alt="" />
             </div>
             <div className='about'> 
-                <h3>about</h3>
-                <ul>
-                    <li>Figma</li>
-                    <li>Html | CSS</li>
-                    <li>Figma</li>
-                    <li>Html | CSS</li>
-                    <li>Figma</li>
-                    <li>Html | CSS</li>
-                </ul>
-                
+                <div>
+                    <h2>Intereses</h2>
+                    <ul>
+                        <li>#Android</li>
+                        <li>#Desing</li>
+                        <li>#APIs</li>
+                        <li>#Automatizacion</li>
+                        <li>#AWS</li>
+                    </ul>
+                </div>
+                <div className='second'> 
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                    </ul>
+                </div>
             </div>
             <div className='project'> 
-                <h3>projects</h3>
-                <ul>
-                    <li>Figma</li>
-                    <li>Html | CSS</li>
-                   
-                </ul>
+                <h2>projects</h2>
+                <br/>
+                <h4>Automatizacion de mensajeria masiva</h4>
+                <h5>actualmente</h5>
+                <a href="">Gitgub</a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem aspernatur esse nostrum veniam. Beatae, velit. Veniam ullam nemo, assumenda exercitationem eveniet eligendi facere, quisquam unde perspiciatis provident adipisci in!</p>
+                <br/>
+                <h4>Automatizacion de mensajeria masiva</h4>
+                <h5>actualmente</h5>
+                <a href="">Gitgub</a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem aspernatur esse nostrum veniam. Beatae, velit. Veniam ullam nemo, assumenda exercitationem eveniet eligendi facere, quisquam unde perspiciatis provident adipisci in!</p>
+                <br/>
+
+                <h4>Automatizacion de mensajeria masiva</h4>
+                <h5>actualmente</h5>
+                <a href="">Gitgub</a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam autem aspernatur esse nostrum veniam. Beatae, velit. Veniam ullam nemo, assumenda exercitationem eveniet eligendi facere, quisquam unde perspiciatis provident adipisci in!</p>
             </div>
         </div>
         <div className='circle2'></div>
