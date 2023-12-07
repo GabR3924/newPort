@@ -94,8 +94,8 @@
     display: flex;
     background: linear-gradient(
     135deg,
-    rgba(27, 146, 213, 1) 36%,
-    rgb(81, 0, 255) 95%
+    #1b92d5 36%,
+    #5100ff 95%
   );
   border-right: 3px solid  rgb(35, 167, 243) ;
   border-bottom: 3px solid  rgb(32, 162, 237) ;

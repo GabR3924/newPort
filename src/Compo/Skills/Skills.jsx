@@ -27,15 +27,22 @@ function Skills() {
             <div className='info'>
                 <div className="img"></div>
                 <div className="txt">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ratione ducimus corporis beatae voluptatibus. Laboriosam dolore, fugiat autem, quia minus hic magni rerum, dolor nemo excepturi possimus reprehenderit eveniet quos.
-                    Similique cumque tempore aliquid voluptates non mollitia hic ipsam deserunt, officia assumenda suscipit doloremque facilis odit amet? Veritatis optio, quam repudiandae ab voluptas at quaerat excepturi sed, reprehenderit laudantium blanditiis.
-                    </p>
+                    <p>Software Developer con background en Informatica que me ha
+proporcionado un sólido conjunto de competencias como la
+capacidad de trabajar eficazmente en equipo, adaptarme a nuevas
+tecnologías con facilidad y analizar datos de forma masiva
+especializado en Back-end y Cloud Computing. Conocimientos en
+metodologías ágiles, GIT, estructura de datos, algoritmos,
+frameworks CSS, arquitectura de datos. Experiencia en Back-end y
+Cloud Computing con AWS y Azure. Soy una persona altamente
+Adaptable, Analitica, Dedicada, Flexible y Orientada a resultados.</p>
                 </div>
                 <div className="contact">
                     <h2>Contact</h2>
-                        <p>Telefono</p>
-                        <p>Email</p>
-                        <p>Linkedln</p>
+                        <p>Telefono: 56 9 3264 7535</p>
+                        <p>Email: garc392004@gmail</p>
+                        <a href="https://www.linkedin.com/in/gabriela-r-24b4b0214/" style={{ textDecoration: 'none', color: '#1b92d5' }}>Linkedin</a>
+
                 </div>
             </div >
             <div className='sks'>
