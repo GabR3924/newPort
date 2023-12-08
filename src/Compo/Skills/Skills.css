@@ -215,6 +215,11 @@
   padding: 1%;
 }
 
+.about .second ul li{
+  display: flex;
+  flex-direction: column;
+}
+
 .about .second ul li img{
   width: 5em;
   height: 5em;
