@@ -256,4 +256,11 @@
   .cont *{
     grid-column: 1;
   }
+
+  .sks {
+    width: 100%;
+    border: 1px solid red;
+    grid-template-columns: repeat(7, 1fr);
+    
+  }
 }
