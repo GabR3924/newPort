@@ -197,16 +197,11 @@
 }
 
 .about ul li{
-  border-radius: 10em;
+  border: none;
   width: 100%;
   background: none;
-  border: 1px solid #1b92d5;
-  border-bottom:3px solid #1b92d5;
-  border-right:3px solid #1b92d5;
   padding: 3%;
-  justify-items: center;
   justify-content: center;
-  justify-self: center;
   align-items: center;
 }
 

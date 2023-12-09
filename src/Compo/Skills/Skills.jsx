@@ -15,6 +15,11 @@ import Aws from '../../assets/aws.png'
 import Git from '../../assets/git.png'
 import Postman from '../../assets/postman.png'
 import Website from '../../assets/Website.png'
+import Box from '../../assets/Box.png'
+import Laptop from '../../assets/Laptop.png'
+import Database from '../../assets/Database.png'
+import Document from '../../assets/Documents.png'
+import Cloud from '../../assets/Cloud.png'
 
 
 function Skills() {
@@ -79,11 +84,11 @@ Adaptable, Analitica, Dedicada, Flexible y Orientada a resultados.</p>
                     <h2>Habilidades</h2>
                     <ul>
                         <li><img src={Website} alt="" /> <br/> Apis</li>
-                        <li><img src={Website} alt="" /> <br/> Apis</li>
-                        <li><img src={Website} alt="" /> <br/> Apis</li>
-                        <li><img src={Website} alt="" /> <br/> Apis</li>
-                        <li><img src={Website} alt="" /> <br/> Apis</li>
-                        <li><img src={Website} alt="" /> <br/> Apis</li>
+                        <li><img src={Box} alt="" /> <br/> Apis</li>
+                        <li><img src={Laptop} alt="" /> <br/> Apis</li>
+                        <li><img src={Database} alt="" /> <br/> Apis</li>
+                        <li><img src={Document} alt="" /> <br/> Apis</li>
+                        <li><img src={Cloud} alt="" /> <br/> Apis</li>
                     </ul>
                 </div>
             </div>
