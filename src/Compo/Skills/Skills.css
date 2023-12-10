@@ -258,7 +258,6 @@
   }
 
   .info{
-    height: 80vh;
     grid-column: 1;
     grid-row: 1;
     border-radius: 2%;
