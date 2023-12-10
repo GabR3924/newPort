@@ -70,7 +70,7 @@ Adaptable, Analitica, Dedicada, Flexible y Orientada a resultados.</p>
                 <img src={Postman} alt="" />
             </div>
             <div className='about'> 
-                <div>
+                <div className='one'>
                     <h2>Intereses</h2>
                     <ul>
                         <li>#Android</li>

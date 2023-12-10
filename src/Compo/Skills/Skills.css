@@ -61,7 +61,7 @@
     height: 30%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 15px;
   
   }
@@ -86,7 +86,8 @@
     grid-column: 2 / span 4;
     /* background: rgba(128, 128, 128, 0.103); */
     grid-template-columns: repeat(8, 1fr);
-    gap: 5%;
+    grid-row: auto auto;
+    gap: 2em;
   }
 
   .sks .add{
@@ -104,10 +105,8 @@
 
   }
   
-  .sks .img {
+  .sks img {
     background: none;
-    width: 40%;
-    height: 90%;
   }
   
   .about {
@@ -203,6 +202,9 @@
   padding: 3%;
   justify-content: center;
   align-items: center;
+  border: 1px solid  rgb(35, 167, 243) ;
+  border-right: 3px solid  rgb(35, 167, 243) ;
+  border-bottom: 3px solid  rgb(32, 162, 237) ;
 }
 
 .about .second ul{
@@ -213,6 +215,7 @@
 .about .second ul li{
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 .about .second ul li img{
@@ -250,17 +253,44 @@
 
 @media (width < 680px){
   .cont {
-    grid-template-columns: minmax(100px, 1fr) ;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
 
-  .cont *{
+  .info{
+    height: 80vh;
     grid-column: 1;
+    grid-row: 1;
+    border-radius: 2%;
+  }
+
+  .info .contact{
+    border: 1px solid green;
   }
 
   .sks {
+    grid-row: 2;
+    grid-column: 1;
     width: 100%;
-    border: 1px solid red;
-    grid-template-columns: repeat(7, 1fr);
-    
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: auto auto;
+    padding: 3%;
+  }
+
+  .about{
+    grid-row: 3;
+    grid-column: 1;
+
+  }
+
+  .about .second ul{
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+  }
+
+  .project{
+    grid-row: 4;
+    grid-column: 1;
+
   }
 }
