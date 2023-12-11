@@ -118,23 +118,29 @@
   color: white;
 }
 
-/* ... (código adicional) ... */
-
-/* Ajuste para pantallas con un ancho máximo de 680px */
 @media (max-width: 680px) {
+  .section h1{
+    font-size: 4em;
+  }
+
   .projects {
-    grid-template-columns: 1fr; /* Solo una columna para que se apilen */
+    grid-template-columns: 1fr; 
   }
 
   .projects > div {
-    border-radius: 15px; /* Asegura que los bordes sigan siendo redondeados */
+    border-radius: 15px; 
   }
 
   .projects img {
-    border-radius: 15px 15px 0 0; /* Mantén el redondeo en la parte superior de la imagen */
+    border-radius: 15px 15px 0 0; 
   }
 
-  .projects .info {
-    border-radius: 0 0 15px 15px; /* Añade redondeo en la parte inferior de la información */
+  .projects .info ul{
+    width: 100%;
   }
+
+  .projects .ver {
+    width: 3.5em;
+  }
+
 }

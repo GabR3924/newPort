@@ -1,22 +1,19 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { Data } from '../../data.js';
+import Modal from '../Modal/Modal.jsx';
 
 function Projects() {
-  const [detailVisible, setDetailVisible] = useState({
-    uno: false,
-    dos: false,
-    tres: false,
-    cuatro: false,
-  });
+  const [selectedProject, setSelectedProject] = useState(null);
 
-  const toggleDetail = (container) => {
-    const updatedDetailVisible = { ...detailVisible };
-    updatedDetailVisible[container] = !updatedDetailVisible[container];
-    setDetailVisible(updatedDetailVisible);
+  const openModal = (projectId) => {
+    console.log("Abrir modal para el proyecto:", projectId);
+    setSelectedProject(projectId);
+  };
 
-    const containerElement = document.querySelector(`.${container}`);
-    containerElement.classList.toggle('expanded');
+  const closeModal = () => {
+    console.log("Cerrar modal para el proyecto:", selectedProject);
+    setSelectedProject(null);
   };
 
   return (
@@ -34,16 +31,16 @@ function Projects() {
                   <li key={index}>{category}</li>
                 ))}
               </ul>
-              <button className='ver' onClick={() => toggleDetail(project.id)}>
+              <button className='ver' onClick={() => openModal(project.id)}>
                 Ver
               </button>
-            </div>
-            <div className={`detail ${detailVisible[project.id] ? 'visible' : ''}`}>
-              {/* Contenido del detalle del contenedor */}
             </div>
           </div>
         ))}
       </div>
+      {selectedProject && (
+        <Modal project={Data.find((project) => project.id === selectedProject)} onClose={closeModal} />
+      )}
     </section>
   );
 }
