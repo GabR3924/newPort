@@ -56,14 +56,13 @@
     padding: 3%;
   }
 
-  .info .img{
+  .info .img {
     background: url('../../assets//about.jpg');
-    height: 30%;
+    height: 200px; /* Adjust the height as needed */
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 15px;
-  
   }
 
   .info .txt {
@@ -251,19 +250,24 @@
   }
 }
 
-@media (width < 680px){
+@media (max-width: 680px) {
   .cont {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
 
-  .info{
+  .info {
     grid-column: 1;
     grid-row: 1;
     border-radius: 2%;
   }
 
-  .info .contact{
+  .info .img {
+    height: 150px; 
+    margin-bottom: 5%;
+  }
+
+  .info .contact {
     border: 1px solid green;
   }
 
@@ -276,20 +280,18 @@
     padding: 3%;
   }
 
-  .about{
+  .about {
     grid-row: 3;
     grid-column: 1;
-
   }
 
-  .about .second ul{
+  .about .second ul {
     grid-template-columns: repeat(3, auto);
     justify-content: space-between;
   }
 
-  .project{
+  .project {
     grid-row: 4;
     grid-column: 1;
-
   }
 }
