@@ -1,138 +1,55 @@
-.section .options {
+.section {
   margin-top: 5%;
   margin-bottom: 4%;
-  padding: 1%;
-  padding-left: 12%;
-  display: grid;
-  grid-template-columns: minmax(100px, 1fr) 1fr 1fr 1fr;
 }
 
-.section h1{
+.section h1 {
   font-family: "Commissioner", sans-serif;
   font-size: 5em;
   color: white;
   padding-left: 2%;
   margin: 4%;
 }
-
-.section .options h1 {
-  font-family: "Commissioner", sans-serif;
-  font-size: 2.5em;
-  color: white;
-}
-
 .projects {
-  height: 100%;
   display: grid;
-  grid-template-columns: minmax(100px, 1fr);
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-columns: minmax(300px, 1fr) 1fr ;
+  gap: 40px;
   padding-left: 5%;
   padding-right: 5%;
-  gap: 3%;
   margin-bottom: 1%;
 }
 
-.projects img {
-  margin-bottom: 2%;
-  width: 45%;
+.projects > div {
+  position: relative;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  border: none;
 }
 
-.uno,
-.dos,
-.tres,
-.cuatro {
-  display: grid;
-  grid-template-rows: auto auto; /* Ajustado para incluir el botón "Ver" */
-  grid-template-columns: minmax(100px, 1fr) 1fr;
-  color: white;
-  gap: 2%;
-  border-bottom: 2px solid white;
-  padding-bottom: 2%;
-}
-
-.uno .img,
-.dos .img,
-.tres .img,
-.cuatro .img {
+.projects img {
   width: 100%;
-  height: 21em;
-  background: url("../../assets/Desktop.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  grid-column: 2;
-  grid-row: 1;
-  border-radius: 10px;
+  height: auto;
+  border-radius: 15px 15px 0 0;
 }
 
-.uno .info,
-.dos .info,
-.tres .info,
-.cuatro .info {
-  grid-column: 1;
-  grid-row: 1;
-  font-family: "Blinker", sans-serif;
-  background: none;
-}
-
-.info * {
-  margin-bottom: 2%;
-  font-weight: 300;
-}
-
-.info h3 {
-  font-size: 3em;
-  font-family: "Blinker", sans-serif;
-}
-
-.info ul {
-  gap: 4%;
-}
-
-.info ul li {
-  display: grid;
+.projects .info {
+  padding: 20px;
   color: white;
-  font-family: "Blinker", sans-serif;
-  font-size: .9em;
-  background: linear-gradient(
-    135deg,
-    rgb(11, 106, 162) 5%,
-    rgba(55, 0, 172, 1) 63%
-  );
-  border-radius: 8px;
-  padding: 5%;
-  border-bottom: 2px solid rgba(27, 146, 213, 1);
-  border-right: 2px solid rgba(27, 146, 213, 1);
-  align-items: center;
 }
 
-.uno .detail,
-.dos .detail,
-.tres .detail,
-.cuatro .detail {
+.projects .detail {
   display: none;
-  grid-column: 1 / span 2;
-  grid-row: 2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
   color: white;
-  margin-top: 10px;
-}
-
-.uno.expanded .detail,
-.dos.expanded .detail,
-.tres.expanded .detail,
-.cuatro.expanded .detail {
-  display: block;
-  grid-row: 3;
-  padding: 2%;
-  border-radius: 10px;
   background: rgba(107, 107, 107, 0.221);
+  border-radius: 0 0 15px 15px;
 }
 
-.uno .ver,
-.dos .ver,
-.tres .ver,
-.cuatro .ver {
+.projects .ver {
   display: grid;
   color: white;
   font-family: "Blinker", sans-serif;
@@ -145,86 +62,79 @@
   border: none;
   align-items: center;
   cursor: pointer;
-}
-
-.uno .ver:hover,
-.dos .ver:hover,
-.tres .ver:hover,
-.cuatro .ver:hover {
-  background: rgba(255, 255, 255, 0.548);
-}
-
-.cuatro {
-  margin-bottom: 15%;
-}
-
-.prueba{
-  width: 80vw;
-  height: 80vh;
-  border: 2px solid red;
-  margin-bottom: 35%;
-  gap: 2%;
-}
-
-.prueba .puno{
-  height: 4em;
-  width: 4em;
-  background: violet;
-}
-
-.prueba .pdos{
-  height: 8em;
-  width: 8em;
-  background: rgb(46, 71, 163);
-}
-
-.dos,
-.cuatro {
-  display: grid;
-  grid-template-rows: auto auto; /* Ajustado para incluir el botón "Ver" */
-  grid-template-columns: 1fr minmax(100px, 1fr); /* Cambiado el orden de las columnas */
-  color: white;
-  gap: 2%;
-  border-bottom: 2px solid white;
-  padding-bottom: 2%;
-}
-
-.dos .img,
-.cuatro .img {
-  width: 100%;
-  height: 21em;
-  background: url("../../assets/Desktop.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  grid-column: 1; /* Cambiado de grid-column: 2; a grid-column: 1; */
-  grid-row: 1;
-  border-radius: 10px;
-}
-
-.dos .info,
-.cuatro .info {
-  grid-column: 2; /* Cambiado de grid-column: 1; a grid-column: 2; */
-  grid-row: 1;
-  font-family: "Blinker", sans-serif;
-  background: none;
-}
-
-.dos .detail,
-.cuatro .detail {
-  grid-column: 1/3; /* Ajustado grid-column para incluir el botón "Ver" */
-  grid-row: 2;
-  color: white;
   margin-top: 10px;
 }
 
-.dos.expanded .detail,
-.cuatro.expanded .detail {
-  grid-row: 3;
+.projects > div.expanded .detail {
+  display: block;
 }
 
-@media (max-width: 9880px) {
+
+.projects h3 {
+  font-size: 2em;
+  font-family: "Blinker", sans-serif;
+  margin-bottom: 10px;
+}
+
+.projects p {
+  margin-bottom: 15px;
+}
+
+.projects ul {
+  gap: 4%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.projects li {
+  display: inline-block;
+  background: linear-gradient(135deg, rgb(11, 106, 162) 5%, rgba(55, 0, 172, 1) 63%);
+  border-radius: 8px;
+  padding: 5%;
+  border-bottom: 2px solid rgba(27, 146, 213, 1);
+  border-right: 2px solid rgba(27, 146, 213, 1);
+  margin-right: 10px;
+}
+
+.projects .detail {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background: rgba(107, 107, 107, 0.221);
+  border-radius: 0 0 15px 15px;
+  color: white;
+}
+
+.projects .expanded .detail {
+  display: block;
+}
+
+.projects .info {
+  padding: 20px;
+  color: white;
+}
+
+/* ... (código adicional) ... */
+
+/* Ajuste para pantallas con un ancho máximo de 680px */
+@media (max-width: 680px) {
   .projects {
-    grid-template-columns: minmax(100px, 1fr);
-    gap: 2%;
+    grid-template-columns: 1fr; /* Solo una columna para que se apilen */
+  }
+
+  .projects > div {
+    border-radius: 15px; /* Asegura que los bordes sigan siendo redondeados */
+  }
+
+  .projects img {
+    border-radius: 15px 15px 0 0; /* Mantén el redondeo en la parte superior de la imagen */
+  }
+
+  .projects .info {
+    border-radius: 0 0 15px 15px; /* Añade redondeo en la parte inferior de la información */
   }
 }
