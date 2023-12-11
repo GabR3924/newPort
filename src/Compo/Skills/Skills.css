@@ -283,11 +283,18 @@
   .about {
     grid-row: 3;
     grid-column: 1;
+    padding-right: 10%;
   }
 
   .about .second ul {
-    grid-template-columns: repeat(3, auto);
-    justify-content: space-between;
+    grid-template-columns: 1fr 1fr ; 
+    justify-content: center; 
+    padding-right: 10%;
+
+  }
+
+  .about .one ul li {
+    font-size: 1em;
   }
 
   .project {
