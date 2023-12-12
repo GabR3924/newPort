@@ -5,7 +5,7 @@ const Modal = ({ project, onClose }) => {
   return (
     <div className="modal-overlay">
       <div className="modal">
-        <h2>{project.title}</h2>
+        <h2>{project.title}</h2> 
         <p>{project.description}</p>
         <ul>
           {project.categories.map((category, index) => (
