@@ -26,7 +26,7 @@ function Skills() {
   return (
     <section className='Skills'>
         <div className='title'>
-            <h1>Skills</h1>
+            <h1>Sobre mi</h1>
         </div>
         {/* <div className='circle'></div> */}
         <div className="cont">
@@ -93,7 +93,7 @@ Adaptable, Analitica, Dedicada, Flexible y Orientada a resultados.</p>
                 </div>
             </div>
             <div className='project'> 
-                <h2>projects</h2>
+                <h2>proyectos</h2>
                 <br/>
                 <h4>Automatizacion de mensajeria masiva</h4>
                 <h5>actualmente</h5>
